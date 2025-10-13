@@ -12,7 +12,9 @@ function handleClick(e){
     let txt = "Updated";
     btn.innerText = txt;
 
-    handleContainer();
+    // handleContainer();
+    cont.innerText = "The button has been updated!";
+
 }
 function handleContainer(){
     cont.innerText = "The button has been updated!";
