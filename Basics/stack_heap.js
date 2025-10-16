@@ -2,7 +2,7 @@
 // Heap => Non-Primitive values are stored in Heap Memory
 
 let userOne = "Vignesh";
-let userTwo = userOne;
+let userTwo = userOne; // It stores copy of userOne
 
 console.log("Before Modified");
 console.log(userOne); // Vignesh
@@ -21,7 +21,7 @@ let myFavCar = {
     model : "GLC"
 }
 
-let yourFavCar = myFavCar;
+let yourFavCar = myFavCar; //It stores reference of myFavCar
 
 console.log("Before Modifying");
 console.log(myFavCar.make,myFavCar.model); //Benz GLC
