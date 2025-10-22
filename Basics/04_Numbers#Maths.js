@@ -1,6 +1,6 @@
 
 // EPSILON= 2.220446049250313e-16,MAX_SAFE_INTEGER= 9007199254740991,MAX_VALUE= 1.7976931348623157e+308,MIN_SAFE_INTEGER= -9007199254740991,MIN_VALUE= 5e-324,NEGATIVE_INFINITY= -Infinity,NaN= NaN,POSITIVE_INFINITY= Infinity,isFinite= ƒ isFinite(),isInteger= ƒ isInteger(),isNaN= ƒ isNaN(),isSafeInteger= ƒ isSafeInteger(),length= 1,name= "Number",parseFloat= ƒ parseFloat(),parseInt= ƒ parseInt()
-/*
+
 const num = new Number(1000);
 console.log(num); //[Number: 1000]
 
@@ -20,7 +20,7 @@ const num5 = 100000000;
 console.log(num5.toLocaleString()); //100,000,000 (US standarad)
 console.log(num5.toLocaleString("en-IN")); //10,00,00,000 (Indian standard)
 
-*/
+
 
 
 // ++++++++++++++++++++ Maths ++++++++++++++++++++++++++++++++++++=
