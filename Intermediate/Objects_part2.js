@@ -16,7 +16,7 @@ const user = {
         }
     }
 }
-/*
+
 console.log(user.email); // abc@gmail.com
 console.log(user.UserDetails); // { fullname: { firstname: 'Vignesh', lastname: 'varma' }, address: { city: 'Hyderabad', pincode: '522012', state: 'Telangana' } }
 console.log(user.UserDetails.fullname); // { firstname: 'Vignesh', lastname: 'varma' }
@@ -50,7 +50,7 @@ const obj5 = {...obj1, ...obj2};
 
 console.log(obj5); // { '1': 'a', '2': 'b', '3': 'c', '4': 'd' }
 
-*/
+
 
 const InstaUser = {
     name : "Arjun",
