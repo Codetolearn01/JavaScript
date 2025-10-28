@@ -35,7 +35,7 @@ console.log(typeof myObj.mySym); // string
 
 //[mySym] : "keyOne",
 console.log(myObj[mySym]); // keyOne
-console.log(typeof myObj[mySym]);
+console.log(typeof myObj[mySym]); // string
 console.log(myObj);
 // {
 //   name: 'Vignesh',

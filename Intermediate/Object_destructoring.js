@@ -13,6 +13,7 @@ const {course_tutor:tutor} = course;
 const {course_name : naam} = course;
 const {course_duration : duration} = course;
 
+// console.log(course.course_tutor) // Vignesh
 // console.log(course_tutor); // Vignesh
 console.log(tutor); // Vignesh
 console.log(naam); // JS full length course
