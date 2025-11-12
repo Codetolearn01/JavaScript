@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changer</title>
+    <style>
+        *{
+            margin : 0;
+            padding : 0;
+            box-sizing : border-box;
+        }
+        .container{
+            display : flex;
+            justify-content : center;
+            flex-direction: column;
+            align-items : center;
+            height : 100vh;
+        }
+
+        .button{
+            display : inline-block; /* without this, for span elements, height and width doesn't apply*/
+            height : 50px;
+            width : 50px;
+            border : 2px solid rgb(235, 235, 237);
+            margin : 10px;
+            cursor : pointer;
+        }
+        .red{
+            background-color: red;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .black{
+            background-color: black;
+        }
+        .green{
+            background-color: green;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Color Changer</h1>
+        <div class="boxes">
+            <span title="red" class="button red"></span>
+            <span title="blue" class="button blue"></span>
+            <span title="black" class="button black"></span>
+            <span title="green" class="button green"></span>
+            <span title="yellow" class="button yellow"></span>
+        </div>
+        <h2>Click on any color to Change background to that color</h2>
+    </div>
+
+    <script>
+        const buttons = document.querySelectorAll(".button");
+
+        buttons.forEach((btn) => {
+            btn.addEventListener("click",function (e){
+                const ele = e.target.className;
+                const clr = ele.split(" ")[1];
+                document.body.className = '';
+                document.body.classList.add(clr);
+                if(clr === "black"){
+                    document.body.style.color = "white";
+                }else{
+                    document.body.style.color = "black";
+                }
+            });
+        });
+        //If we click outside the buttons bg color changes to default
+        document.addEventListener("click",function(e){
+            if(![...buttons].includes(e.target)){
+                document.body.className = "";
+                document.body.style.color = "black";
+
+            }
+        })
+    </script>
+</body>
+</html>
