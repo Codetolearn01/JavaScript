@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding : 0;
+            margin : 0;
+            box-sizing: border-box;
+        }
+        body{
+            display : flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #212121;
+            height : 100vh;
+        }
+        .container{
+            background-color : #fff;
+            height : 100px;
+            width : 400px;
+            padding : 10px;
+            text-align: center;
+            margin : auto;
+            position: relative;
+            border-radius: 8px;
+            display : flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 30px 13px rgb(190, 89, 89,0.3);
+        }
+        .notifi-icon{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content : center;
+            height : 30px;
+            border-radius: 50%;
+            width : 30px;
+            background-color: rgb(201, 18, 18);
+            top : 0;
+            right : 0;
+            transform: translate(50%,-50%);
+            text-align: center;
+            color : #fff;
+            /* margin-bottom : 10px; */
+        }
+        .notifi-icon span{
+            margin-top : 5px;
+            height : 100%;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="message">Message is displayed here...</h2>
+        <p class="notifi-icon"><span>5</span></p>
+    </div>
+</body>
+</html>
